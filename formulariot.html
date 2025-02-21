@@ -22,3 +22,23 @@
         <label for="termos">Aceito todos os termos e condições:</label>
         <input type="checkbox" id="termos" name="termos" required><br>
 </form>
+<h2>Formulário de reserva de sala</h2>
+<form>
+    <label for="data_reserva">Data da reserva:</label><br>
+    <input type="date" id="data_reserva" name="data_reserva" min="2025-02-21" required><br>
+    <label for="horario_inicio">Horário - início:</label><br>
+    <input type="time" id="horario_inicio" name="horario_inicio" required><br>
+    <label for="horario_fim">Horário - término:</label><br>
+    <input type="time" id="horario_fim" name="horario_fim" required><br>
+</form>
+<p>Qual é o tipo de sala?</p>
+<form>
+    <input type="radio" id="sala" name="tipo_sala" value="Reunião">
+    <label for="sala">Reunião</label><br>
+    <input type="radio" id="sala" name="tipo_sala" value="Treinamento">
+    <label for="sala">Treinamento</label><br>
+    <input type="radio" id="sala" name="tipo_sala" value="Individual">
+    <label for="sala">Individual</label><br><br>
+    <label for="participantes">Número de participantes:</label>
+    <input type="number" id="participantes" name="participantes" min="1" required><br>
+</form>
